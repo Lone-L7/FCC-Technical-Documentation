@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+html,
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 20% 78%;
+    grid-gap: 2%;
+}
+
+#navbar {
+    display: grid;
+    grid-template-rows: auto 0 1fr;
+    grid-column: 1 / 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+#navbar header {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2vw;
+    text-align: center;
+    padding: 2em 0;
+}
+
+#navSelect {
+    display: none;
+    position: fixed;
+}
+
+#navSelect:checked~.navLists {
+    display: unset;
+}
+
+.burger {
+    padding: 0.25em;
+    margin: auto;
+    cursor: pointer;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: none;
+}
+
+.burger>div {
+    background-color: white;
+    width: 1.5em;
+    height: 0.25em;
+    margin: 0.25em 0;
+}
+
+.navLists {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    display: grid;
+    place-items: center;
+}
+
+.navLists::-webkit-scrollbar {
+    width: 0.75vw;
+}
+
+.navLists::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+.navLists::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+.navLists li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-weight: 700;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.navLists li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    display: grid;
+    grid-gap: 2em;
+    grid-column: 2 / 3;
+}
+
+main section header {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.miniHeader {
+    font-size: 2em;
+}
+
+main section p {
+    font-size: 17px;
+    line-height: 2em;
+}
+
+main section ul li {
+    line-height: 3em;
+    font-size: 17px;
+}
+
+main section code {
+    background-color: black;
+    color: white;
+    padding: 7px;
+    font-family: monospace;
+}
+
+main section a {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 0;
+        grid-template-rows: 5em 1fr;
+        grid-gap: 1em 0;
+    }
+
+    #navbar {
+        place-items: center;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        grid-template-columns: 90% 10%;
+        grid-template-rows: 5em 1fr;
+        border-bottom: 2px black solid;
+        width: 100%;
+        height: auto;
+    }
+
+    #navbar header {
+        font-size: 5vw;
+    }
+
+    .burger {
+        display: unset;
+    }
+
+    .navLists {
+        display: none;
+        grid-column: 1 / 3;
+        width: 100%;
+        height: 35vh;
+    }
+
+    .navLists li {
+        height: 4em;
+    }
+
+    #navSelect:checked~.navLists {
+        display: grid;
+    }
+
+    main {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+
+    main section {
+        scroll-margin-top: 6em;
+        padding: 0 2em;
+    }
+
+    main section header {
+        text-align: center;
+    }
+}

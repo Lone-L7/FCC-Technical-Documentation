@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>HTML Documentation</header>
+        <input type="checkbox" id="navSelect">
+        <label for="navSelect">
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </label>
+        <ul class="navLists">
+            <li><a href="#Intro" class="nav-link">Intro</a></li>
+            <li><a href="#HTML_Tag" class="nav-link">HTML Tag</a></li>
+            <li><a href="#Head_Tag" class="nav-link">Head Tag</a></li>
+            <li><a href="#Body_Tag" class="nav-link">Body Tag</a></li>
+            <li><a href="#Reference" class="nav-link">Reference</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+
+        <section id="Intro" class="main-section">
+            <header>Intro</header>
+            <p>HTML is a markup language that has been used by millions of people around the globe.</p>
+            <p>HTML stands for Hyper Text Markup Language.</p>
+            <p>HTML elements tell the browser how to display the content.</p>
+            <p>Just like what you have seen right now, this website is created using HTML and CSS.</p>
+            <p>We will show you the basics of HTML.</p>
+        </section>
+
+        <section id="HTML_Tag" class="main-section">
+            <header>HTML Tag</header>
+            <ul>
+                <li><code>html</code></li>
+                <li><code>!DOCTYPE html</code></li>
+                <li><code>html lang="en"</code></li>
+            </ul>
+            <p>The <code>html</code> tag itself defines root element of the website.</p>
+            <p>The <code>!DOCTYPE html</code> code defines that this document is HTML5 document.</p>
+            <p>While the <code>html lang="en"</code> code defines what language this document is.</p>
+        </section>
+
+        <section id="Head_Tag" class="main-section">
+            <header>Head Tag</header>
+            <ul>
+                <li><code>head</code></li>
+                <li><code>meta charset="UTF-8"</code></li>
+                <li><code>meta http-equiv="X-UA-Compatible" content="IE=edge"</code></li>
+                <li><code>meta name="viewport" content="width=device-width, initial-scale=1.0"</code></li>
+                <li><code>title</code></li>
+            </ul>
+            <p>The <code>head</code> tag contains the meta information about this page.</p>
+            <p>This tag, <code>meta charset="UTF-8"</code> attribute specifies the character encoding for the HTML
+                document. The HTML5 specification encourages web developers to use the UTF-8 character set, which covers
+                almost all of the characters and symbols in the world!</p>
+            <p></p>
+        </section>
+
+        <section id="Body_Tag" class="main-section">
+            <header>Body Tag</header>
+            <p>Since this is just a snippet, we are only going to list out few of tags.</p>
+            <ul>
+                <li>Headings</li>
+                <li>Paragraphs</li>
+                <li>Links</li>
+                <li>Images</li>
+            </ul>
+            <header class="miniHeader">Headings</header>
+            <ul>
+                <li><code>h1</code></li>
+                <li><code>h2</code></li>
+                <li><code>h3</code></li>
+                <li><code>h4</code></li>
+                <li><code>h5</code></li>
+                <li><code>h6</code></li>
+            </ul>
+            <p>Heading usually used for titles like this website section title.</p>
+            <header class="miniHeader">Paragraphs</header>
+            <p><code>p</code> is used for paragraphs like this website section descriptions.</p>
+            <header class="miniHeader">Links</header>
+            <p><code>a href="[links]"</code> is used for sharing links like on this websites.</p>
+            <header class="miniHeader">Images</header>
+            <p><code>img src="[links]"</code> is used for sharing images on websites.</p>
+        </section>
+
+        <section id="Reference" class="main-section">
+            <header>Reference</header>
+            <p>This is a snippet, taken from <a href="https://www.w3schools.com/">W3School</a>.</p>
+        </section>
+    </main>
+</body>
+
+</html>
